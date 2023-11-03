@@ -1,0 +1,14 @@
+C:\Users\chand\source\repos\leecode\leecode\bin\Debug\netcoreapp3.1\leecode.exe
+C:\Users\chand\source\repos\leecode\leecode\bin\Debug\netcoreapp3.1\leecode.deps.json
+C:\Users\chand\source\repos\leecode\leecode\bin\Debug\netcoreapp3.1\leecode.runtimeconfig.json
+C:\Users\chand\source\repos\leecode\leecode\bin\Debug\netcoreapp3.1\leecode.runtimeconfig.dev.json
+C:\Users\chand\source\repos\leecode\leecode\bin\Debug\netcoreapp3.1\leecode.dll
+C:\Users\chand\source\repos\leecode\leecode\bin\Debug\netcoreapp3.1\leecode.pdb
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.csproj.AssemblyReference.cache
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.AssemblyInfoInputs.cache
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.AssemblyInfo.cs
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.csproj.CoreCompileInputs.cache
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.dll
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.pdb
+C:\Users\chand\source\repos\leecode\leecode\obj\Debug\netcoreapp3.1\leecode.genruntimeconfig.cache
