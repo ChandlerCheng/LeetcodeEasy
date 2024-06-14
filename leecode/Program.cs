@@ -135,85 +135,9 @@ namespace leecode
              */
 
         }
-
-        public class PrinterLabel
-        {
-            private int _LabelHeigh;
-            private int _LabelWidth;
-            private string _description;
-
-            public int LabelHeigh
-            {
-                get => _LabelHeigh;
-                set
-                {
-                    _LabelHeigh = value;
-                }
-            }
-            public int LabelWidth
-            {
-                get => _LabelWidth;
-                set
-                {
-                    _LabelWidth = value;
-                }
-            }
-            public string Description
-            {
-                get { return _description; }
-                set
-                {
-                    if (value.Length > 0 && value.Length < 10)
-                        this._description = value;
-                    else
-                        throw new System.Exception("欄位上限為10");
-                }
-            }
-        }
-
-        static void ClassTest()
-        {
-            /*
-                   只是拿來學習Class的Code
-             */
-            PrinterLabel label = new PrinterLabel();
-            int getLH;
-            label.LabelHeigh = 10;
-            getLH = label.LabelHeigh;
-            label.Description = "1111111111";
-            System.Console.Write("");
-        }
         static void Main(string[] args)
         {
-            ClassTest();
-
-
-            /* 以下是ZPL API範本 */
-            byte[] zpl = Encoding.UTF8.GetBytes("^XA^MNN^LL800^FO400,10^BQN,2,10^FDMM,AHTTPS://T2DC.CN/99.1000.1/AB0401005001012430101DJ^FS^FO100,407^BQN,2,10^FDMM,AHTTPS://T2DC.CN/99.1000.1/AB0401005001012430101DJS20000500*********00230529B001000100010539825295977638568^FS^FO396,17^GB377,377^FS^FO96,414^GB377,377^FS^FO150,40^A0N,40,40^FDQR Code Short^FS^FO480,500^A0N,40,40^FDQR Code Long^FS^XZ");
-            // adjust print density (8dpmm), label width (4 inches), label height (6 inches), and label index (0) as necessary
-            var request = (HttpWebRequest)WebRequest.Create("http://api.labelary.com/v1/printers/8dpmm/labels/4x6/0/");
-            request.Method = "POST";
-            //request.Accept = "application/pdf"; // omit this line to get PNG images back
-            request.ContentType = "application/x-www-form-urlencoded";
-            request.ContentLength = zpl.Length;
-
-            var requestStream = request.GetRequestStream();
-            requestStream.Write(zpl, 0, zpl.Length);
-            requestStream.Close();
-
-            try
-            {
-                var response = (HttpWebResponse)request.GetResponse();
-                var responseStream = response.GetResponseStream();
-                var fileStream = File.Create("label.png"); // change file name for PNG images
-                responseStream.CopyTo(fileStream);
-                responseStream.Close();
-                fileStream.Close();
-            }
-            catch (WebException e)
-            {
-                Console.WriteLine("Error: {0}", e.Status);
-            }
+            
             return;
         }
     }
